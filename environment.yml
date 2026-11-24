@@ -1,0 +1,33 @@
+# Core versions are pinned. After the first working install, export the full
+# lock file with:  conda env export --no-builds > environment.lock.yml
+name: brain-tumor-uq
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pytorch=2.3.1
+  - torchvision=0.18.1
+  - pytorch-cuda=12.1
+  - pip
+  - pip:
+      - numpy<2
+      - scipy
+      - pandas
+      - scikit-learn
+      - matplotlib
+      - opencv-python-headless
+      - pillow
+      - imagehash
+      - pyyaml
+      - tqdm
+      - mlflow
+      - sagemaker-mlflow   # only needed if using SageMaker managed MLflow
+      - boto3
+      - kaggle
+      - gdown
+      - timm               # MedViT dependency; confirm against external/MedViT/requirements.txt
+      - einops             # MedViT dependency; confirm against external/MedViT/requirements.txt
+      - pytest
+      - ruff

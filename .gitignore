@@ -1,0 +1,13 @@
+# Original thesis materials (kept locally, not public)
+thesis/
+CLAUDE.md
+.DS_Store
+.env
+data/raw/
+data/processed/
+results/*
+!results/.gitkeep
+mlruns/
+*.pt
+*.pth
+*.ckpt
