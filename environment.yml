@@ -27,8 +27,13 @@ dependencies:
       - boto3
       - kaggle
       - gdown
-      - timm               # MedViT dependency; confirm against external/MedViT/requirements.txt
-      - einops             # MedViT dependency; confirm against external/MedViT/requirements.txt
+      - timm==1.0.8        # MedViT dependency (external/MedViT/requirements.txt)
+      - einops             # MedViT dependency (external/MedViT/requirements.txt)
+      - medmnist==3.0.1    # MedViT dependency (external/MedViT/requirements.txt)
+      - scikit-image       # MedViT dependency (external/MedViT/requirements.txt)
+      - fvcore             # MedViT dependency (external/MedViT/requirements.txt)
+      - fire               # MedViT dependency (external/MedViT/requirements.txt)
+      - torchattacks       # MedViT dependency (external/MedViT/requirements.txt)
       - pytest
       - ruff
       - pre-commit
