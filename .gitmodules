@@ -1,0 +1,6 @@
+[submodule "external/MedViT"]
+	path = external/MedViT
+	url = https://github.com/Omid-Nejati/MedViT
+[submodule "external/BayesDLL"]
+	path = external/BayesDLL
+	url = https://github.com/minyoungkim21/BayesDLL
