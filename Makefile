@@ -12,5 +12,3 @@ test:
 	pytest
 
 check: lint test
-
-
