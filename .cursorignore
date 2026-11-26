@@ -1,0 +1,14 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+kaggle.json
+
+# Data and model artefacts
+data/raw/
+data/processed/
+checkpoints/
+weights/
+mlruns/
+mlartifacts/

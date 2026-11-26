@@ -1,0 +1,18 @@
+{
+    "permissions": {
+      "deny": [
+        "Read(./.env)",
+        "Read(./.env.*)",
+        "Read(./data/raw/**)",
+        "Read(./data/processed/**)",
+        "Read(./checkpoints/**)",
+        "Read(./weights/**)",
+        "Read(**/*.pem)",
+        "Read(**/kaggle.json)"
+      ],
+      "ask": [
+        "Bash(git push *)",
+        "Bash(rm -rf *)"
+      ]
+    }
+  }
