@@ -28,25 +28,24 @@ After submission I reviewed the thesis and its code critically and identified se
 | Uncertainty reported but not used | Misclassification detection and accuracy–rejection analysis |
 | Grad-CAM assessed qualitatively on two images | Quantitative localisation against tumor masks |
 
-The original thesis and notebook are kept unchanged in [`thesis/`](thesis/) for reference. The full protocol is in [`PROTOCOL.md`](PROTOCOL.md).
+The original thesis and notebook are not included in this repository. The full protocol is in [`PROTOCOL.md`](PROTOCOL.md).
 
 ## Repository structure
 
 ```
-├── thesis/      Original MSc thesis and notebook (unchanged)
+├── CLAUDE.md    Instructions for AI coding assistants
 ├── configs/     One YAML config per method
 ├── data/        Split files and data manifest (no images)
 ├── src/         Data, models, methods, evaluation, uncertainty, Grad-CAM
 ├── scripts/     Entry points: training, evaluation, figures
 ├── tests/       Unit tests for splits and metrics
 ├── results/     Final tables and figures
-├── docs/        Setup and environment documentation
-└── external/    MedViT and BayesDLL as pinned git submodules
+└── external/    MedViT and BayesDLL as pinned git submodules (planned)
 ```
 
 ## Getting started
 
-See [`docs/SETUP.md`](docs/SETUP.md) for environment setup, data download and cloud configuration.
+Create the Python environment from [`environment.yml`](environment.yml). Data sources, licences and checksums are listed in [`data/MANIFEST.md`](data/MANIFEST.md). MedViT and BayesDLL will be included as pinned git submodules under `external/`.
 
 ## Results
 
@@ -80,7 +79,7 @@ Sources, licences and checksums are recorded in [`data/MANIFEST.md`](data/MANIFE
 
 ## Use of AI tools
 
-AI coding assistants (Claude, via Cursor and Claude Code) were used to help write and review code. All experimental design decisions, results and interpretations are my own, and all code was reviewed before being committed.
+AI coding assistants (Claude, via Cursor and Claude Code) were used to help write and review code. The rules they follow in this repository are in [`CLAUDE.md`](CLAUDE.md). All experimental design decisions, results and interpretations are my own, and all code was reviewed before being committed.
 
 ## Disclaimer
 
@@ -88,4 +87,4 @@ This is a research project. It is not a medical device and must not be used for 
 
 ## Licence
 
-Code in this repository is released under the MIT licence. Third-party libraries and datasets are subject to their own licences.
+All rights reserved. No licence is granted for use, copying, modification or distribution of the code in this repository at this stage. Third-party libraries and datasets are subject to their own licences.
