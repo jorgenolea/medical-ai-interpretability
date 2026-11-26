@@ -31,3 +31,4 @@ dependencies:
       - einops             # MedViT dependency; confirm against external/MedViT/requirements.txt
       - pytest
       - ruff
+      - pre-commit
